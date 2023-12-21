@@ -2,7 +2,7 @@
 Messager, SMS xabarlarini yuborish uchun ma'lum [Eskiz.uz](https://eskiz.uz/sms) API xizmatidan foydalanish uchun yaratilgan .NET kutubxonasi. U bir martalik parollar (OTP) va odatiy matnli xabarlarni yuborish jarayonini sodda funksionallik orqali osonlashtiradi.
 
 ## O'rnatish
-Messager NuGet paketini quyidagi buyrug'or yordamida o'rnatishingiz mumkin:
+Messager NuGet paketini quyidagi buyruq yordamida o'rnatishingiz mumkin:
 
 ```bash
 dotnet add package Messager.EskizUz
@@ -15,7 +15,7 @@ Messagerdan foydalanish uchun siz e-mail va maxfiy kalitni taqdim etib, Messager
 using Messager.EskizUz;
 
 // Messager obyektini yarating
-var messager = new Messager("sizning-email@example.com", "sizning-maxfiy-kalitingiz");
+var messager = new MessagerAgent("sizning-email@example.com", "sizning-maxfiy-kalitingiz");
 ```
 
 ## OTP SMS Yuborish
