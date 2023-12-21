@@ -1,6 +1,6 @@
-﻿namespace Messager.Models;
+﻿namespace Messager.EskizUz.Models;
 
-internal class SMS
+public class SMS
 {
     public string mobile_phone { get; set; } = string.Empty;
     public string message { get; set; } = string.Empty;

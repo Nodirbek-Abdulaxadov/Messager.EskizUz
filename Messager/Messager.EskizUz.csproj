@@ -8,7 +8,19 @@
     <Title>Eskiz.uz orqali SMS yuborish uchun kutubxona</Title>
     <Authors>Nodirbek Abdulaxadov</Authors>
     <Company>MDevs Group</Company>
+    <PackageProjectUrl>https://github.com/Nodirbek-Abdulaxadov/Messager.EskizUz</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Nodirbek-Abdulaxadov/Messager.EskizUz</RepositoryUrl>
+    <PackageTags>#SMS</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Downloads\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

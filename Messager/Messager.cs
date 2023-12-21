@@ -1,9 +1,9 @@
-﻿using Messager.Models;
+﻿using Messager.EskizUz.Models;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace Messager;
+namespace Messager.EskizUz;
 public class Messager : IDisposable
 {
 	private string TOKEN = string.Empty;
@@ -33,8 +33,8 @@ public class Messager : IDisposable
 			mobile_phone = phoneNumber.Replace("+",""),
 			from = "4546",
 			message = CreateSMS(code),
-			callback_url = "https://software-engineer.uz"
-		};
+			callback_url = "https://eskiz.uz/sms"
+        };
 		using var httpClient = new HttpClient();
         var httpContent = new StringContent(JsonConvert.SerializeObject(sms),
             Encoding.UTF8, "application/json");
@@ -74,7 +74,7 @@ public class Messager : IDisposable
             mobile_phone = phoneNumber.Replace("+", ""),
             from = "4546",
             message = text,
-            callback_url = "https://software-engineer.uz"
+            callback_url = "https://eskiz.uz/sms"
         };
         using var httpClient = new HttpClient();
         var httpContent = new StringContent(JsonConvert.SerializeObject(sms),
