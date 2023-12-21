@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 using System.Text;
 
 namespace Messager.EskizUz;
-public class Messager : IDisposable
+public class MessagerAgent : IDisposable
 {
 	private string TOKEN = string.Empty;
 	private readonly string _email;
@@ -13,7 +13,7 @@ public class Messager : IDisposable
 	/// <summary>
 	/// Initialize intance and token
 	/// </summary>
-	public Messager(string email, string secretKey)
+	public MessagerAgent(string email, string secretKey)
 	{
 		_email = email;
 		_secretKey = secretKey;
