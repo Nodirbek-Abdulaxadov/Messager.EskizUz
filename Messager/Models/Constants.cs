@@ -1,7 +1,7 @@
-﻿namespace Messager.EskizUz.Models;
+namespace Messager.EskizUz.Models;
 internal static class Constants
 {
-    public static string BASE_URL = "https://notify.eskiz.uz/api/";
-    public static string LOGIN_URL = BASE_URL + "auth/login";
-    public static string Send_SMS_URL = BASE_URL + "message/sms/send";
+    public const string BASE_URL = "https://notify.eskiz.uz/api/";
+    public const string LOGIN_URL = BASE_URL + "auth/login";
+    public const string Send_SMS_URL = BASE_URL + "message/sms/send";
 }
