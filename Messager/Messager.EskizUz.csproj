@@ -10,7 +10,6 @@
     <Authors>Nodirbek Abdulaxadov</Authors>
     <Company>MDevs Group</Company>
     <PackageProjectUrl>https://github.com/Nodirbek-Abdulaxadov/Messager.EskizUz</PackageProjectUrl>
-    <PackageIcon>logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/Nodirbek-Abdulaxadov/Messager.EskizUz</RepositoryUrl>
     <PackageTags>#SMS</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
@@ -23,7 +22,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="logo.png" Pack="true" PackagePath="\" Condition="Exists('logo.png')" />
     <None Include="..\LICENSE" Pack="true" PackagePath="\" Condition="Exists('..\LICENSE')" />
     <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\README.md')" />
   </ItemGroup>
